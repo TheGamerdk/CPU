@@ -11,11 +11,17 @@
   		.nav-options-text {
   			font-size: 25px;
   		}
+  		* {
+  			font-size: 25px;
+  		}
+  		.table_font {
+  			font-size: 23px;
+  		}
   	</style>
 </head>
 <body style="padding: 5px; max-width: 2500px; margin: 0 auto;">
 	<h2>CPU Game</h2>         
-  		<table class="table">
+  		<table class="table" style="max-width:300px;">
     		<thead>
       			<tr>
       			</tr>
@@ -23,7 +29,7 @@
     		<tbody>
       			<tr>
         			<td style="font-size: 23px; color:green;">Money</td>
-        			<td style="font-size: 23px; color:green;">100000$</td>
+        			<td style="font-size: 23px; color:green;" id="cash">100000$</td>
       			</tr>
     		</tbody>
   		</table>
@@ -31,15 +37,47 @@
 	<ul class="nav nav-tabs" role="tablist">
     	<li role="presentation" class="active"><a class="nav-options-text" href="#research" data-toggle="tab">Research</a></li>
     	<li role="presentation"><a class="nav-options-text" href="#dev" data-toggle="tab">Development</a></li>
-    	<li role="presentation"><a class="nav-options-text" href="#" data-toggle="tab">Production</a></li>
-    	<li role="presentation"><a class="nav-options-text" href="#" data-toggle="tab">Release</a></li>
+    	<li role="presentation"><a class="nav-options-text" href="#prod" data-toggle="tab">Production</a></li>
+    	<li role="presentation"><a class="nav-options-text" href="#mark" data-toggle="tab">Release</a></li>
     </ul>
     <div class="tab-content clearfix">
     	<div class="tab-pane active" id="research">
-      	  <h3>Research</h3>
+    		<br>
+      	  	<h3>Research</h3>
 		</div>
     	<div class="tab-pane" id="dev">
-    	    <h3>Development Menuuuuu</h3>
+    		<br>
+    	    <h3>Development</h3>
+		</div>
+		<div class="tab-pane" id="prod">
+			<br>
+    	    <h3>Production</h3>
+    	    <br>
+    	    <table class="table" style="max-width: 750px;">
+    	    	<thead>
+    	    		<tr>
+    	    			<td class="table_font">Company</td>
+    	    			<td class="table_font">Amount Per Month</td>
+    	    			<td class="table_font">Price</td>
+    	    			<td class="table_font"></td>
+    	    			<td class="table_font">Status</td>
+    	    		</tr>
+    	    	</thead>
+    	    	<tbody>
+    	    		<tr>
+    	    			<td class="table_font">Soni</td>
+    	    			<td class="table_font">2000</td>
+    	    			<td class="table_font">50000$</td>
+    	    			<td class="table_font"><button type="button" class="btn btn-primary">Employ</button></td>
+    	    			<td class="table_font">NOT EMPLOYED</td>
+    	    		</tr>
+    	    	</tbody>
+    	    </table>
+		</div>
+		<div class="tab-pane" id="mark">
+			<br>
+    	    <h3>Marketing</h3>
+    	    <br>
 		</div>
 	</div>
 </body>
